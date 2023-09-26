@@ -6,6 +6,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { SuccessComponent } from './success/success.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 
@@ -15,6 +17,8 @@ import { SignupComponent } from './signup/signup.component';
     AppComponent,
     LoginComponent,
     SignupComponent,
+    SuccessComponent,
+    ProfileComponent,
 
   ],
   imports: [
