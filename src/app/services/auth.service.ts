@@ -59,6 +59,7 @@ export class AuthService {
   }
 
   // Function to log out the user
+<<<<<<< HEAD
   // Function to log out the user
   logout(): void {
     // Clear the user data and authentication state
@@ -67,6 +68,20 @@ export class AuthService {
     // Redirect to the login page
     this.router.navigate(['/login']);
   }
+=======
+  logout(userId: string): void {
+    // Check if the current user matches the provided userId
+    const currentUser = this.getCurrentUser();
+
+    if (currentUser && currentUser.userId === userId) {
+      // Redirect to the login page
+      this.router.navigate(['/login']);
+    } else {
+      console.error('You can only log out yourself.');
+    }
+  }
+
+>>>>>>> 99e08c8fd01b2b80352fcb07448646674fb140e5
   // Function to get the currently authenticated user
   getCurrentUser(): any {
     const userData = localStorage.getItem('currentUser');
