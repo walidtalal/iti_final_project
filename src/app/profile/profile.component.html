@@ -1,4 +1,22 @@
+<<<<<<< HEAD
 <!--
+=======
+<!-- <div class="profile">
+  <h2>Welcome to Your Profile, {{ user?.username }}</h2>
+  <div class="user-info">
+    <p>Name: {{ user?.firstName }} {{ user?.lastName }}</p>
+    <p>Email: {{ user?.email }}</p>
+    <p>Gender: {{ user?.gender }}</p>
+    <p>Address: {{ user?.address }}</p>
+    <p>Date of Birth: {{ user?.dob | date }}</p>
+  </div>
+  <div class="profile-picture">
+    <img *ngIf="profilePicture" [src]="profilePicture" alt="Profile Picture">
+    <input type="file" accept="image/*" (change)="onProfilePictureChange($event)">
+  </div>
+  <button (click)="logout()">Logout</button>
+</div> -->
+>>>>>>> 99e08c8fd01b2b80352fcb07448646674fb140e5
 
 <div class="profile">
   <h2>Welcome to Your Profile, {{ user?.username }}</h2>
@@ -18,6 +36,7 @@
     />
   </div>
   <button *ngIf="user" (click)="logout()">Logout</button>
+<<<<<<< HEAD
 </div> -->
 
 <div class="profile">
@@ -42,4 +61,6 @@
     />
   </div>
   <button *ngIf="user" (click)="logout()">Logout</button>
+=======
+>>>>>>> 99e08c8fd01b2b80352fcb07448646674fb140e5
 </div>

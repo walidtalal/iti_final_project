@@ -4,7 +4,11 @@ import { SignupComponent } from './signup/signup.component';
 import { SuccessComponent } from './success/success.component';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
+<<<<<<< HEAD
 import { AuthGuard } from './guards/auth.guard';
+=======
+import { AuthGuard } from './auth.guard';
+>>>>>>> 99e08c8fd01b2b80352fcb07448646674fb140e5
 
 const routes: Routes = [
   // { path: '', redirectTo: '/registration', pathMatch: 'full' },
